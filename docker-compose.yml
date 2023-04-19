@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:6-jammy
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_DATABASE: 'test'
+      MONGO_INITDB_ROOT_USERNAME: 'root'
+      MONGO_INITDB_ROOT_PASSWORD: 'password'
+    volumes:
+      - mongodb:/data/db/mongodb
+volumes:
+  mongodb:

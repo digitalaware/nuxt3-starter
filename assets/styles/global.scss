@@ -1,0 +1,19 @@
+
+
+a {
+  text-decoration: none;
+}
+
+.flex-center {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  &--column {
+    flex-direction: column;
+  }
+}
+
+
+.full-width {
+  width: 100%;
+}

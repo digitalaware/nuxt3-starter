@@ -1,0 +1,58 @@
+module.exports = {
+	env: {
+		browser: true,
+		es2021: true,
+		node: true,
+	},
+	extends: [
+		'eslint:recommended',
+		'plugin:prettier/recommended',
+		'plugin:vue/essential',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:promise/recommended',
+		'plugin:import/recommended',
+		'@nuxtjs/eslint-config-typescript',
+	],
+	parserOptions: {
+		ecmaVersion: 'latest',
+		parser: '@typescript-eslint/parser',
+		sourceType: 'module',
+	},
+	plugins: ['vue', '@typescript-eslint'],
+	rules: {
+		'comma-dangle': [0],
+		semi: [0],
+		indent: [0],
+		'no-console': [0],
+		'arrow-parens': [0],
+		'prettier/prettier': 'error',
+		'import/no-unresolved': 'off',
+		'@typescript-eslint/no-unused-vars': 'warn',
+		'import/extensions': [0],
+		'import/no-named-as-default': [0],
+		camelcase: [0],
+		'no-tabs': [0],
+		'space-before-function-paren': [0],
+		'global-require': [0],
+		'vue/html-indent': [0],
+		'no-plusplus': ['off', { allowForLoopAfterthoughts: true }],
+		'vue/attribute-hyphenation': [0],
+		'vue/html-closing-bracket-newline': [0],
+		'vue/singleline-html-element-content-newline': [
+			'off',
+			{
+				ignoreWhenNoAttributes: true,
+				ignoreWhenEmpty: true,
+				ignores: ['pre', 'textarea'],
+			},
+		],
+		'vue/multiline-html-element-content-newline': [
+			'warn',
+			{
+				ignoreWhenEmpty: true,
+				ignores: ['pre', 'textarea'],
+				allowEmptyLines: false,
+			},
+		],
+	},
+};
