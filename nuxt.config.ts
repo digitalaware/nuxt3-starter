@@ -19,6 +19,9 @@ export default defineNuxtConfig({
 		strict: true,
 		typeCheck: false,
 	},
+	routeRules: {
+		'/api/**': { cors: true },
+	},
 	vite: {
 		optimizeDeps: {
 			include: ['jsonwebtoken'],
@@ -72,6 +75,10 @@ export default defineNuxtConfig({
 					purpose: 'any maskable',
 				},
 			],
+		},
+		workbox: {
+			globPatterns: ['**/*.{js,css,html}'],
+			navigateFallback: null,
 		},
 	},
 	auth: {

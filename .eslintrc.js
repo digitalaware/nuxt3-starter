@@ -27,8 +27,8 @@ module.exports = {
 		'arrow-parens': [0],
 		'prettier/prettier': 'error',
 		'import/no-unresolved': 'off',
-		'@typescript-eslint/no-unused-vars': 'warn',
-		'import/extensions': [0],
+		'@typescript-eslint/no-unused-vars': 'error',
+		'import/extensions': [1],
 		'import/no-named-as-default': [0],
 		camelcase: [0],
 		'no-tabs': [0],
@@ -37,7 +37,7 @@ module.exports = {
 		'vue/html-indent': [0],
 		'no-plusplus': ['off', { allowForLoopAfterthoughts: true }],
 		'vue/attribute-hyphenation': [0],
-		'vue/html-closing-bracket-newline': [0],
+		'vue/html-closing-bracket-newline': [1],
 		'vue/singleline-html-element-content-newline': [
 			'off',
 			{

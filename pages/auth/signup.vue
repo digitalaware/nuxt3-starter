@@ -10,10 +10,10 @@ definePageMeta({
 		navigateAuthenticatedTo: '/',
 	},
 });
-export default {
+export default defineNuxtComponent({
 	name: 'SignupPage',
 	components: { SignupForm },
-};
+});
 </script>
 
 <style scoped></style>

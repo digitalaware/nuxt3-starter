@@ -1,35 +1,37 @@
 <template>
-	<ElMenu
-		class="menu"
-		mode="horizontal"
-		active-text-color="#ffd04b"
-	>
-		<template v-if="!userData">
-			<ElMenuItem>
-				<NuxtLink to="/auth/login">Login</NuxtLink>
-			</ElMenuItem>
-			<ElMenuItem>
-				<NuxtLink to="/auth/signup">Register</NuxtLink>
-			</ElMenuItem>
-		</template>
-		<template v-else>
-			<ElMenuItem @click="logout()"><ElText>Logout</ElText></ElMenuItem>
-		</template>
-	</ElMenu>
+	<ClientOnly>
+		<ElMenu
+			class="menu"
+			mode="horizontal"
+			active-text-color="#ffd04b"
+		>
+			<template v-if="status !== 'authenticated'">
+				<ElMenuItem route="/auth/login">
+					<NuxtLink to="/auth/login">Login</NuxtLink>
+				</ElMenuItem>
+				<ElMenuItem route="/auth/signup">
+					<NuxtLink to="/auth/signup">Register</NuxtLink>
+				</ElMenuItem>
+			</template>
+			<template v-else>
+				<ElMenuItem @click="logout()"><ElText>Logout</ElText></ElMenuItem>
+			</template>
+		</ElMenu>
+	</ClientOnly>
 </template>
 
 <script lang="ts">
 export default defineComponent({
 	name: 'TheHeader',
 	setup() {
-		const { data: userData, signOut } = useAuth();
+		const { status, signOut } = useAuth();
 
 		const logout = (): void => {
 			signOut({ callbackUrl: '/auth/login' });
 		};
 
 		return {
-			userData,
+			status,
 			logout,
 		};
 	},

@@ -12,7 +12,7 @@ import { useUserApi } from '~/composables/api/useUserApi';
 import UserTable from '~/components/main/UserTable.vue';
 import { User } from '~/models/User';
 
-export default {
+export default defineNuxtComponent({
 	name: 'MainPage',
 	components: { UserTable },
 	async setup() {
@@ -28,7 +28,7 @@ export default {
 
 		return { users: userList, count: data.value.count, changePage };
 	},
-};
+});
 </script>
 
 <style scoped></style>

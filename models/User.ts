@@ -5,7 +5,7 @@ import { ExtendedModel } from '~/models/mongoose.types';
 export interface User {
 	_id?: string | Schema.Types.ObjectId;
 	username: string;
-	password: string;
+	password?: string;
 	createdAt: Date | string;
 }
 

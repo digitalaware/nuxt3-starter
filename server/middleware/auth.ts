@@ -2,6 +2,7 @@
 import jsonwebtoken from 'jsonwebtoken';
 import { getRequestHeader } from 'h3';
 import { UserModel } from '~/server/databaseModels';
+import { User } from '~/models/User';
 // eslint-disable-next-line import/no-named-as-default-member
 const { decode, verify } = jsonwebtoken;
 
@@ -19,10 +20,11 @@ export default defineEventHandler(async (event) => {
 			}
 			verify(authToken, config.jwtSecret);
 			const userId = decode(authToken as string);
-			const authUser = await UserModel.findById(userId?.sub).select('+password').exec();
+			const authUser = await UserModel.findById(userId?.sub).select('+password').lean().exec();
 			if (!authUser) {
 				createError({ statusCode: 403, message: 'User no longer exist' });
 			}
+			delete (authUser as User).password;
 			event.context.user = authUser;
 		} catch (e) {
 			createError({ statusCode: 403, message: 'Not authorized' });

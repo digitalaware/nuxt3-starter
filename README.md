@@ -1,13 +1,14 @@
 ### Introducion
 Hi bro
 
-- Support Standard Markdown / CommonMark and GFM(GitHub Flavored Markdown);
-- Full-featured: Real-time Preview, Image (cross-domain) upload, Preformatted text/Code blocks/Tables insert, Code fold, Search replace, Read only, Themes, Multi-languages, L18n, HTML entities, Code syntax highlighting...;
-- Markdown Extras : Support ToC (Table of Contents), Emoji, Task lists, @Links...;
-- Compatible with all major browsers (IE8+), compatible Zepto.js and iPad;
-- Support identification, interpretation, fliter of the HTML tags;
-- Support TeX (LaTeX expressions, Based on KaTeX), Flowchart and Sequence Diagram of Markdown extended syntax;
-- Support AMD/CMD (Require.js & Sea.js) Module Loader, and Custom/define editor plugins;
+- Your friends says "REACT IS A BUSINSESS STANDART"?
+- Tired of arguing, what is the performance difference between useCallback() and useMemo()?
+- Don't want to be the "setState renders" magician?
+- Want to build your own Full-Stack application without tears?
+- Green is your favorite color?
+
+THERE IS AN EXIT!
+Try new version of fast SSR JS Framework based on Vue 3.:tw-1f680::tw-1f680::tw-1f680:
 
 # Nuxt3 + MongoDB starter
 
@@ -24,14 +25,50 @@ Hi bro
 - [x] [Nuxt Server Routes](https://nuxt.com/docs/guide/directory-structure/server)
 - [x] [Auth & Protected Routes](https://sidebase.io/nuxt-auth/getting-started/)
 - [x] [PWA]('https://pwa.nuxtjs.org/')
-- [x] Eslint & Prettier
-- [x] Husky & Commitlint
-- [x] Custom Workspace Snippets
-- [x] Built-in Unit Test
+- [x] [Eslint]('https://eslint.org/') & [Prettier]('https://prettier.io/')
+- [x] [Built-in Unit Test]('https://nuxt.com/docs/getting-started/testing')
+
+## Getting started
+
+First, you need to set up environment. Node >= 18.16.0 required
+Also, need to install [docker-compose](https://docs.docker.com/compose/ "docker-compose").
+
+Then, go to project folder, and run:
+
+1. Install dependencies
+   `yarn install // or npm install`
+
+2. Create .env file with default env variables:
+   `cp env.example .env`
+
+3. Run MongoDB container
+   `docker-compose up`
+
+4. Run project
+   `npm run dev`
 
 
 
+## Description
+You can test user authorization and watch registered user list in basic table.
+Learn more about project structure [here]('https://nuxt.com/docs/guide/directory-structure/nuxt').
 
+You can analyze project bundle:
+`npm run analyze`
 
+Build project:
+`npm run build`
 
-###End
+Test project with coverage using Vitest:
+`npm run test`
+
+- Use server route middleware to handle auth requests. *// server/middleware/auth*
+- Use composable functions for reusable code. // *composables/* *
+- Use $fetch interceptors to handle requests | responses. *// composables/useFetchConfig*
+- Use Pinia store to app state management. *// store/* * . All your modules in store registered automatically.
+- Use auto-generated html pages and routes with SSR | SSG in pages folder. *// pages* *
+- Get access to your enviroment variables with useRuntimeConfig() hook
+- No need to more import framework functions, just write to code!
+
+##### Try it out and enjoy!
+

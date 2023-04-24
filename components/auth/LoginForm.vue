@@ -38,7 +38,7 @@
 		</ElForm>
 		<div class="flex-center flex-center--column">
 			<ElText>Not have an account?</ElText>
-			<NuxtLink to="/auth/signup">Sign Up</NuxtLink>
+			<NuxtLink to="/auth/signup"> Sign Up </NuxtLink>
 		</div>
 	</FormContainer>
 </template>

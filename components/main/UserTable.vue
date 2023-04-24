@@ -40,7 +40,7 @@ export default defineComponent({
 		},
 	},
 	emits: ['change-page'],
-	setup(props, { emit }) {
+	setup(_props, { emit }) {
 		const columns = [
 			{
 				prop: '_id',
