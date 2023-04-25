@@ -8,8 +8,8 @@ Hi Bro
 -   Want to build your own Full-Stack application without tears?
 -   Green is your favorite color?
 
-THERE IS AN EXIT!
-Try new version of fast SSR JS Framework based on Vue 3.:tw-1f680::tw-1f680::tw-1f680:
+**THERE IS AN EXIT!**
+Try new version of fast SSR JS Framework based on Vue 3.:rocket:
 
 # Nuxt3 + MongoDB starter
 
@@ -25,6 +25,8 @@ Try new version of fast SSR JS Framework based on Vue 3.:tw-1f680::tw-1f680::tw-
 -   [x] [PWA](https://pwa.nuxtjs.org/)
 -   [x] [Eslint](https://eslint.org/) & [Prettier](https://prettier.io/)
 -   [x] [Built-in Unit Test](https://nuxt.com/docs/getting-started/testing)
+-   [x] [PM2 Included](https://pm2.keymetrics.io/docs/usage/quick-start/)
+-   [x] SSR + SPA modes
 
 ## Getting started
 
@@ -34,16 +36,20 @@ Also, need to install [docker-compose](https://docs.docker.com/compose/ 'docker-
 Then, go to project folder, and run:
 
 1. Install dependencies
-   `yarn install // or npm install`
+
+    yarn install // or npm install
 
 2. Create .env file with default env variables:
-   `cp env.example .env`
+
+    cp env.example .env
 
 3. Run MongoDB container
-   `docker-compose up`
+
+    docker-compose up
 
 4. Run project
-   `npm run dev`
+
+    npm run dev
 
 ## Description
 
@@ -51,13 +57,18 @@ You can test user authorization and watch registered user list in basic table.
 Learn more about project structure [here]('https://nuxt.com/docs/guide/directory-structure/nuxt').
 
 You can analyze project bundle:
-`npm run analyze`
+
+    npm run analyze
 
 Build project:
-`npm run build`
+
+    npm run build
 
 Test project with coverage using Vitest:
-`npm run test`
+
+    npm run test
+
+For deployment and usage in production mode you can use PM2 (config included).
 
 -   Use server route middleware to handle auth requests. _// server/middleware/auth_
 -   Use composable functions for reusable code. // _composables/_ \*

@@ -2,7 +2,7 @@
 import jsonwebtoken from 'jsonwebtoken';
 import { H3Error } from 'h3';
 import { UserModel } from '~/server/databaseModels';
-import { LoginRequest } from '~/components/auth/auth.types';
+import { LoginRequest } from '~/types/auth.types';
 import { validateLoginDto } from '~/server/api/auth/dto/login.dto';
 // eslint-disable-next-line import/no-named-as-default-member
 const { sign } = jsonwebtoken;

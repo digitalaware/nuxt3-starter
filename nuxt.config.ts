@@ -17,7 +17,7 @@ export default defineNuxtConfig({
 	},
 	typescript: {
 		strict: true,
-		typeCheck: false,
+		typeCheck: true,
 	},
 	routeRules: {
 		'/api/**': { cors: true },

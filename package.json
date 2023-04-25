@@ -2,6 +2,19 @@
 	"name": "nuxt-app-starter",
 	"private": true,
 	"version": "1.0.0",
+	"description": "Nuxt3 with MongoDB SSR Full-Stack App Template",
+	"keywords": [
+		"SSR",
+		"SPA",
+		"nuxt",
+		"vue",
+		"auth",
+		"mongo",
+		"starter",
+		"boilerplate",
+		"nuxt-auth",
+		"full-stack"
+	],
 	"scripts": {
 		"prepare": "husky install",
 		"build": "nuxt build",

@@ -1,3 +1,4 @@
+// we have some bad ESM imports in jsonwebtoken lib
 // eslint-disable-next-line import/default
 import jsonwebtoken from 'jsonwebtoken';
 import { getRequestHeader } from 'h3';

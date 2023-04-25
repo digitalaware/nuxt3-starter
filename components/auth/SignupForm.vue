@@ -58,7 +58,7 @@ import { ref } from 'vue';
 import { FormInstance, FormRules } from 'element-plus';
 import { InternalRuleItem, Value } from 'async-validator';
 import FormContainer from '~/components/common/FormContainer.vue';
-import { RegisterFormState } from '~/components/auth/auth.types';
+import { RegisterFormState } from '~/types/auth.types';
 
 export default defineComponent({
 	name: 'SignupForm',

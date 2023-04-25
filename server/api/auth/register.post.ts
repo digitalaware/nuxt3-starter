@@ -1,5 +1,5 @@
 import { UserModel } from '~/server/databaseModels';
-import { LoginRequest } from '~/components/auth/auth.types';
+import { LoginRequest } from '~/types/auth.types';
 
 export default eventHandler(async (event) => {
 	const { username, password } = await readBody<LoginRequest>(event);

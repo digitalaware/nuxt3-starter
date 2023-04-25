@@ -47,7 +47,7 @@
 import { FormInstance, FormRules } from 'element-plus';
 import { ref } from 'vue';
 import FormContainer from '~/components/common/FormContainer.vue';
-import { LoginRequest } from '~/components/auth/auth.types';
+import { LoginRequest } from '~/types/auth.types';
 
 export default defineComponent({
 	name: 'LoginForm',

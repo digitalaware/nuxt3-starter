@@ -4,6 +4,6 @@ import { baseFetchConfig } from '~/composables/api/useFetchConfig';
 
 const getAllUsers = (query: SearchParams) => useFetch('/api/user', { ...baseFetchConfig, method: 'GET', query });
 
-export const useUserApi = {
+export const useUserApi = () => ({
 	getAllUsers,
-};
+});
