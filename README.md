@@ -37,19 +37,19 @@ Then, go to project folder, and run:
 
 1. Install dependencies
 
-    yarn install // or npm install
+    $ yarn install # or npm install
 
 2. Create .env file with default env variables:
 
-    cp env.example .env
+    $ cp env.example .env
 
 3. Run MongoDB container
 
-    docker-compose up
+    $ docker-compose up
 
 4. Run project
 
-    npm run dev
+    $ npm run dev
 
 ## Description
 
@@ -58,15 +58,15 @@ Learn more about project structure [here]('https://nuxt.com/docs/guide/directory
 
 You can analyze project bundle:
 
-    npm run analyze
+    $ npm run analyze
 
 Build project:
 
-    npm run build
+    $ npm run build
 
 Test project with coverage using Vitest:
 
-    npm run test
+    $ npm run test
 
 For deployment and usage in production mode you can use PM2 (config included).
 
@@ -77,5 +77,7 @@ For deployment and usage in production mode you can use PM2 (config included).
 -   Use auto-generated html pages and routes with SSR | SSG in pages folder. _// pages_ \*
 -   Get access to your environment variables with useRuntimeConfig() hook
 -   No need to more import framework functions, just write to code!
+
+#### Free to contribute!
 
 ##### Try it out and enjoy!
