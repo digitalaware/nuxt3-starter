@@ -1,7 +1,7 @@
 {
 	"name": "nuxt-app-starter",
 	"private": true,
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Nuxt3 with MongoDB SSR Full-Stack App Template",
 	"keywords": [
 		"SSR",
